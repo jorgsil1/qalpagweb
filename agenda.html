@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+        <title>AGENDA QAL</title>
+                
+        </style>
+
+        <div align="center">
+             <img src="LOGO QAL ALZAHEIMER.jpeg" width="200" height="210"> 
+        </div>
+        <style>
+         h1{color:  #6c3483  ;}
+         p{color:  #797d7f ;}
+         h1{font-weight: 900;}
+         p{font-size:x-large;line-height: 150%;}
+        </style>
+</head>
+<body>
+        <br><br><ul class="menu">
+                <li><a href="qal.html">Inicio</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="ejercicios.html">Ejercicios</a></li>
+                <li><a href="recordatorio.html">Recordatorio</a></li>
+                <li><a href="medicamentos.html">Medicamentos</a></li>
+                <li><a href="citas_medicas.html">Citas Medicas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <font face="arial">
+                
+                <h2>AGENDA </h2>                
+                <p style="line-height:150%" >Verifica tu Agenda</p5>
+                 
+        </font> 
+        <form name="formulario" method="post" action="/send.php">
+                <!-- Campo de entrada de fecha -->
+                Selecciona la fecha deseada:
+                <input type="date" name="fecha" min="2018-03-25" max="2021-12-24" step="2" />
+                <!-- Campo de entrada de hora -->
+                Selecciona la hora deseada:
+                <input type="time" name="hora" min="18:00" max="21:00" step="3600" />
+              </form>
+              <form name="formulario" method="post" action="/send.php">
+                <!-- Campo de entrada de mes -->
+                <table align="center" cellspacing="2" cellpadding="2" border="0">
+                        <tr><form action="index.php" method="POST">
+
+                    
+                     <td align="center" valign="top">
+                           Mes: <br>
+                           <select name=nuevo_mes>
+                           <option value="1";
+                
+                     if ($mes==1)
+                     echo "selected";
+                     echo'>Enero</option>
+                           <option value="2" ;
+                     if ($mes==2)
+                        echo "selected";
+                     echo'>Febrero</option>
+                           <option value="3" ;
+                     if ($mes==3)
+                        echo "selected";
+                     echo'>Marzo</option>
+                           <option value="4" ;
+                     if ($mes==4)
+                        echo "selected";
+                     echo '>Abril</option>
+                           <option value="5" ;
+                     if ($mes==5)
+                           echo "selected";
+                     echo '>Mayo</option>
+                           <option value="6" ;
+                     if ($mes==6)
+                        echo "selected";
+                     echo '>Junio</option>
+                           <option value="7" ;
+                     if ($mes==7)
+                        echo "selected";
+                     echo '>Julio</option>
+                           <option value="8" ;
+                     if ($mes==8)
+                        echo "selected";
+                     echo '>Agosto</option>
+                           <option value="9";
+                     if ($mes==9)
+                        echo "selected";
+                     echo '>Septiembre</option>
+                           <option value="10" ;
+                     if ($mes==10)
+                        echo "selected";
+                     echo '>Octubre</option>
+                           <option value="11" ;
+                     if ($mes==11)
+                        echo "selected";
+                     echo '>Noviembre</option>
+                           <option value="12" ;
+                     if ($mes==12)
+                     echo "selected";
+                     echo '>Diciembre</option>
+                           </select>
+                           </td>
+                          
+                         <td align="center" valign="top">
+                           Año: <br>
+                           <select name=nuevo_ano>
+                        
+                     //este bucle se podría hacer dependiendo del número de año que se quiera mostrar
+                     //yo voy a mostar 10 años atrás y 10 adelante de la fecha mostrada en el calendario
+                     <for ($anoactual=$ano-10; $anoactual=$ano+10; $anoactual++)></for>{
+                         <option value="' . $anoactual . '" ;
+                        if ($ano=$anoactual) {
+                            "selected";
+                        }
+                         > . $anoactual . </option>
+                     
+                     </select>
+                           </td>;
+                    
+                        </tr>
+                        <tr>
+                         <td colspan="2" align="center"><input type="Submit" value="[ IR A MES ]"></td>
+                        </tr>
+                        </table><br>
+                        
+                        <br>
+                        
+                        </form>
+                        <form action="accion.php" method="post">
+                                <p>Su nombre: <input type="text" name="nombre" /></p>
+                                <p>Su edad: <input type="text" name="edad" /></p>
+                                <p><input type="submit" /></p>
+                               </form>
+                     
+
+        <script src="js/scripts-dist.js"></script>
+        
+
+
+</body>
+</html>
